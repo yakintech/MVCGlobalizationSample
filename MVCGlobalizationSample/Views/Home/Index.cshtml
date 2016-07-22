@@ -1,0 +1,32 @@
+﻿
+@{
+    Layout = null;
+}
+
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@MVCGlobalizationSample.Resource.SiteLanguage.HomeTitle</title>
+</head>
+<body>
+
+    <a href="/change-language/tr-TR">Turkish</a>
+    <a href="/change-language/en-US">English</a>
+
+    <div> 
+        <a href="/@GlobalizationManager.DefaultLanguage/@MVCGlobalizationSample.Resource.SiteLanguage.Home.Slugify()">@MVCGlobalizationSample.Resource.SiteLanguage.Home</a>
+        <a href="/@GlobalizationManager.DefaultLanguage/@MVCGlobalizationSample.Resource.SiteLanguage.About.Slugify()">@MVCGlobalizationSample.Resource.SiteLanguage.About</a>
+        <a href="/@GlobalizationManager.DefaultLanguage/@MVCGlobalizationSample.Resource.SiteLanguage.Contact.Slugify()">@MVCGlobalizationSample.Resource.SiteLanguage.Contact</a>
+    </div>
+
+    <div>
+
+        <p>@MVCGlobalizationSample.Resource.SiteLanguage.HomeContent</p>
+
+    </div>
+</body>
+</html>
